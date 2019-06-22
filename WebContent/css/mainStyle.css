@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(32,35,38);
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	min-height: 500px;
+}
+/*规定头部总样式*/
+#head{
+	padding-top: 5px;
+	height: 55px;
+	width: 100%;
+	background-color: rgb(27,30,33);
+	border-bottom:solid white 1px;
+}
+
+.suit{
+	height: 50px;
+	width: auto;
+}
+a.a2{
+	color: white;
+	text-decoration: none;
+}
+a.a2:hover{
+	color: #87CEEB;
+}
+
+#logo{
+	float:left;
+	padding-left: 10px;
+}
+
+#backlink{
+	float: right;
+	padding-left:20px;
+	padding-right: 20px;
+	line-height: 50px;
+}
+#select1{
+	float: right;
+	height: 100%;
+	padding: 0 5px 0 15px;
+	width: 90px;
+}
+
+#select1 img{
+	height: 20px;
+	display: inline;
+	padding-right: 10px;
+	position: relative;
+	top:3px;
+}
+#select1 p{
+	display: inline;
+	line-height: 50px;
+	color: white;
+}
+#select1 ul{
+	position: relative;
+	bottom: 36px;
+	right: 15px;
+	list-style-type: none;
+	display: none;
+	z-index: 5;
+}
+#select1 li{
+	line-height: 40px;
+	background-color: rgb(40,43,47);
+	width: 110px;
+}
+#select1 li:nth-child(1){
+	visibility: hidden;
+}
+#select1 li div{
+	padding: 0 10px;
+}
+#select1 li div:hover{
+	padding: 0 10px;
+	background-color: rgb(33,37,41);
+}
+/*头部样式定义完成*/
+
+#mid{
+	width: 100%;
+	height: 90%;
+	background-image: url(../img/login_mid_2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+

@@ -1,0 +1,50 @@
+#page{
+	background-color: rgba(255,255,255,0.6);
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+#userListDiv{
+	width: 180px;/*理应设置为最小宽度*/
+	height: 100%;
+	background-color: rgba(135,206,235,0.4);
+	position: relative;
+}
+#activeListDiv{
+	width: 180px;
+	height: 100%;
+	background-color: rgba(225,225,0,0.4);
+	position: relative;
+}
+#messagePageDiv{
+	height: 100%;
+	background-color: rgba(255,255,255,0.4);
+	overflow: hidden;
+	position: relative;
+	
+}
+#activeListDiv,#userListDiv{
+	float: left;
+}
+/*页面大边框之间的大小调整标签*/
+.resizeLable1{
+	float: left;
+	width: 5px;
+	height: 100%;
+	cursor: e-resize;
+	background-color: black;
+}
+
+#myNickName{
+	position: absolute;
+    color: white;
+    top:25px;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+	font-size: 150%;
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: bold;
+}

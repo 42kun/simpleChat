@@ -1,0 +1,31 @@
+#page{
+	height: 500px;
+}
+
+#nickNameIcon{
+	background-image: url("../img/nickName.png");
+}
+#passwordIcon{
+	background-image: url("../img/password.png");
+}
+#confirmPasswordIcon{
+	background-image: url("../img/confirmPassword.png");
+}
+#emailIcon{
+	background-image: url("../img/email.png");
+}
+
+
+
+
+
+.botLink{
+	font-size: 50%;
+	text-decoration: none;
+}
+.botLink:hover{
+	text-shadow: 0 0 1px;
+}
+#loginLink{
+	float: right;
+}

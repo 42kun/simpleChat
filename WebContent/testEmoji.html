@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testEmoji</title>
+</head>
+<link rel="stylesheet" type="text/css" href="jQuery/emoji/css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" type="text/css" href="jQuery/emoji/css/jquery.emoji.css">
+<body>
+
+	<div id="d" contenteditable="true" style="width: 400px;height: 200px;background-color: yellow"></div>
+	<button id="b">:)</button>
+
+</body>
+<script src="jQuery/jQuery.js"></script>
+<script type="text/javascript" src="jQuery/emoji/js/jquery.mousewheel-3.0.6.min.js"></script>
+<script type="text/javascript" src="jQuery/emoji/js/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="jQuery/emoji/js/jquery.emoji.js"></script>
+
+<script type="text/javascript">
+	var msg = "<img class='emoji_icon' src='files/emoji/tieba/13.jpg'>\n<img class='emoji_icon' src='files/emoji/tieba/13.jpg'>";
+	msg = msg.replace(/<img[^\d]*(\d+).*>/g,"$1");
+	alert(msg);
+</script>
+
+
+</html>

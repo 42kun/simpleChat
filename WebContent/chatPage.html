@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>聊天页面</title>
+	<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/chatPage/chatPageMainStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/chatPage/userList.css">
+	<link rel="stylesheet" type="text/css" href="css/chatPage/messagePage.css">
+	<link rel="stylesheet" type="text/css" href="css/chatPage/activeList.css">
+	<script type="text/javascript" src="js/userPage.js"></script>
+</head>
+<body>
+	<div id="head">
+		<div id="logo" class="suit"><a href="login.html"><img src="img/main_logo.png" class="suit"></a></div>
+		<div id="backlink" class="suit"><a class="a2" href="login.html"><p>注销</p></a></div>
+		<div id="select1" class="suit" onmouseover="select()" onmouseout="unselect()"><img src="img/icon_top.png" class="suit">
+			<p>选项▼</p>
+			<ul>
+				<li id="l1">.</li>
+				<li id="l2"><a class="a2"><div>修改密码</div></a></li>
+				<li id="l3"><a class="a2"><div>查询历史</div></a></li>
+				<li id="l4"><a class="a2"><div>个人首页</div></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="mid">
+		<div id="page">
+			<div id="userListDiv">
+				<div id="userListInner">
+					<div id="userListSearchInputDiv">
+						<i id="userListSearchInputIcon"></i>
+						<input type="text" name="userListSearchInput" id="userListSearchInput" placeholder="查找用户">
+						<button type="button" id="userListRefresh"><i></i></button>
+					</div>
+					<p id="userListTitle">用户列表(全部)</p>
+					<div id="userList">
+					</div>
+				</div>
+			</div>
+			<label class="resizeLable1"></label>
+			<div id="activeListDiv">
+				<div id="activeList">
+					<div class="activeList_user">
+						<img class="activeList_user_img">
+						<p class="activeList_user_msg1">kun</p>
+						<p class="activeList_user_msg2">[在线]</p>
+						<p class="activeList_user_msg3">今天还好么aaa</p>
+					</div>
+				</div>
+			</div>
+			<label class="resizeLable1"></label>
+			<div id="messagePageDiv">
+				<div class="messagePageInner">
+					<div id="messageList">
+						<p id="messageListTitle">spy</p>
+						<div id="messageListMsg">
+							<div class="msgLeftDiv">
+								<img class="msgLeftHead">
+								<div class="msgLeft">
+									<img src="img/userPortraitTest.png">
+									asdasdasdasdasdsadsad
+									asdasdasdasdasdsadsadasdasd
+									asdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdas
+									asdasdasdasdasdsadsadasdasdas
+								</div>
+								<div class="clearFloat"></div> 
+							</div>
+							<div class="msgLeftDiv">
+								<img class="msgLeftHead">
+								<div class="msgLeft">
+									<img src="img/userPortraitTest.png">
+									asdasdasdasdasdsadsad
+									asdasdasdasdasdsadsadasdasd
+									asdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdas
+									asdasdasdasdasdsadsadasdasdas
+								</div>
+								<div class="clearFloat"></div> 
+							</div>
+							<p class="messageListUserTime">北京时间</p>
+							<div class="msgRightDiv">
+								<img class="msgRightHead">
+								<div class="msgRight">
+									<img src="img/userPortraitTest.png">
+									asdasdasdasdasdsadsad
+									asdasdasdasdasdsadsadasdasd
+									asdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdasasdasdasdasdassdsadsadasdasdas
+									asdasdasdasdasdsadsadasdasdas
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="importDiv">
+						<div id="importTools">
+							<button id="emojiButton"></button>
+							<button id="imageButton"></button>
+							<button id="fileButton"></button>
+						</div>
+						<textarea name="importMsg" id="importMsg" placeholder="请输入文字(如需换行请按shift)..."></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/chatPage/userList.js"></script>
+</html>

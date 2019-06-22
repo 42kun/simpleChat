@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>div change width by drag</title>
+
+        <script src="jQuery/jQuery.js" type="text/javascript"></script>
+        
+        
+    </head>
+
+    <body>
+        <h1>div change width by drag</h1>
+        
+        <div id="pos" style="color:red"></div>
+        
+        
+        <div id="myDiv" style="border:2px solid red;width:300px;height:50px;margin-left: 100px;margin-top: 20px"></div>
+
+        <div id="otherDiv" style="border: 2px solid blue;width: 200px;height: 200px;margin-left: 400px"></div>
+    </body>
+    
+
+    <script type="text/javascript">
+            $(document).ready(function(){
+                var eleLeft = $('#myDiv').offset().left;
+                var isMouseDown = false;
+                var borderLen = 4; //左右边框
+
+                $('#myDiv').bind({
+                    mousedown:function(e){
+                        var ele = $(this);
+                        var rightPos = eleLeft + ele.width() + borderLen;
+                        if(rightPos-5 <= e.pageX && e.pageX <= rightPos){
+                            isMouseDown = true;
+
+                            //创建遮罩层，防止mouseup事件被其它元素阻止冒泡，导致mouseup事件无法被body捕获，导致拖动不能停止
+                            var bodyWidth = $('body').width();
+                            var bodyHeight = $('body').height();
+                            $('body').append('<div id="mask" style="opacity:0.2;top:0px;left:0px;background-color:green;position:absolute;z-index:9999;width:'+bodyWidth+'px;height:'+bodyHeight+'px;"></div>');
+                        }
+                    }
+                });
+
+                $('body').bind({
+                    mousemove:function(e){
+                        var ele = $('#myDiv');
+                        var rightPos = eleLeft + ele.width() + borderLen;
+                        $('#pos').text("x:"+e.pageX + " eleLeft:"+eleLeft+" rightPos:"+rightPos);
+
+                        if(rightPos-5 <= e.pageX && e.pageX <= rightPos){
+                            ele.css('cursor','e-resize');
+                        }else{
+                            if(!isMouseDown){
+                                ele.css('cursor','auto');
+                            }
+                        }
+                        if(isMouseDown){
+                            ele.width((e.pageX-eleLeft-borderLen)+'px'); 
+                        }
+                    },
+                    mouseup:function(e){
+                        isMouseDown = false;
+                        $('#mask').remove();
+                    }
+                });
+
+                $('#otherDiv').mouseup(function(e){
+                    //e.preventDefault(); //阻止默认行为
+                    e.stopPropagation(); //阻止事件冒泡(导致body捕获不到mouseup事件)
+                });
+            });
+        </script>
+</html>

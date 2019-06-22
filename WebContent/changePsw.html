@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>修改密码</title>
+	<link rel="stylesheet" type="text/css" href="css/userPage.css">
+	<link rel="stylesheet" type="text/css" href="css/changePsw.css">
+	<script type="text/javascript" src="js/userPage.js"></script>
+
+</head>
+<body>
+	<div id="head">
+		<div id="logo" class="suit"><a href="login.html"><img src="img/main_logo.png" class="suit"></a></div>
+		<div id="backlink" class="suit"><a class="a2" href="login.html"><p>登录</p></a></div>
+		<div id="select1" class="suit" onmouseover="select()" onmouseout="unselect()"><img src="img/icon_top.png" class="suit">
+			<p>选项▼</p>
+			<ul>
+				<li id="l1">.</li>
+				<li id="l2"><a class="a2"><div>注册</div></a></li>
+				<li id="l3"><a class="a2"><div>登录</div></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="mid">
+		<div id="page">
+			<p id="title">修改密码</p>
+			<form action="" method="post">
+				<div id="idDiv" class="input">
+					<input type="text" id="idInput" name="id" placeholder="请输入id">
+				</div>
+				<div id="oldPasswordDiv" class="input">
+					<input type="password" id="oldPasswordInput" name="oldPassword" placeholder="请输旧入密码">
+				</div>
+				<div id="newPasswordDiv" class="input">
+					<input type="password" id="newPasswordInput" name="newPassword" placeholder="请输新入密码">
+				</div>
+				<div id="newPasswordDiv" class="input">
+					<input type="password" id="newPasswordInputConf" placeholder="请再次输入新密码">
+				</div>
+				<div id="verificationDiv">
+					
+				</div>
+				<div id="buttonDiv">
+					<button type="button" id="buttonSubmit" name="buttonSubmit">
+					修改密码</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

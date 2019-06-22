@@ -1,0 +1,26 @@
+#idIcon{
+	background-image: url("../img/id.png");
+}
+#passwordIcon{
+	background-image: url("../img/password.png");
+}
+
+#verificationDiv{
+	display: none;
+}
+
+.botLink{
+	font-size: 50%;
+	text-decoration: none;
+}
+.botLink:hover{
+	text-shadow: 0 0 1px;
+}
+#forgetLink{
+	float: left;
+}
+#register{
+	float: right;
+}
+
+

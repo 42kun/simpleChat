@@ -1,0 +1,199 @@
+.messagePageInner{
+	position: absolute;
+	top:5px;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	overflow: hidden;
+}
+
+#messageList{
+	height: 65%;
+	width: 100%;
+	background-color: rgba(255,250,250,0.5);
+	margin-bottom: 10px;
+/*	padding: 10px 20px;*/
+	position: relative;
+	min-width: 450px;
+}
+#importDiv{
+	height: 35%;
+	width: 100%;
+	background-color: rgba(255,235,205,0.5);
+	position: relative;
+}
+
+#messageListTitle{
+	font-size: 130%;
+	font-weight: bold;
+	position: relative;
+	top:10px;
+	left: 20px;
+}
+#messageListMsg{
+	position: absolute;
+	top: 50px;
+	bottom: 10px;
+	left: 20px;
+	right: 20px;
+	overflow: auto;
+}
+
+.clearFloat{
+	clear: both;
+}
+.msgLeftDiv{
+	position: relative;
+	margin-bottom: 20px;
+}
+.msgLeftHead{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+}
+.msgLeft{
+	background-color: #C0C0C0;
+	border-bottom-color:#C0C0C0;
+	padding: 10px 20px;
+	margin-top: 20px;
+	white-space:pre-line;
+	word-break:break-all;
+	word-wrap:break-word; 
+	position: relative;
+	top:10px;
+	border-radius: 5px;
+	max-width: 600px;
+	vertical-align:top;
+	display: inline-block;
+	text-align: left;
+	left:80px;
+}
+.msgLeft:before{content:'';position:absolute;right:100%;top:-4px;width:15px;height:9px;border-width:0;border-style:solid;border-color:transparent;margin-right:-2px;border-bottom-width:11px;border-bottom-color:currentColor;border-radius:0 0 0 18px;color:#C0C0C0;}
+
+.msgLeft img{
+	max-width: 300px;
+	max-height: 300px;
+}
+.messageListUserTime{
+	text-align: center;
+	font-size: 80%;
+	margin-top: 40px;
+}
+
+.msgRightDiv{
+	position: relative;
+	margin-bottom: 20px;
+	text-align: right;
+}
+.msgRightHead{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0px;
+}
+.msgRight{
+	background-color: rgb(209,241,254);
+	border-bottom-color:rgb(209,241,254);
+	padding: 10px 20px;
+	margin-top: 20px;
+	white-space:pre-line;
+	word-break:break-all;
+	word-wrap:break-word; 
+	position: relative;
+	top:10px;
+	border-radius: 5px;
+	max-width: 600px;
+	vertical-align:top;
+	display: inline-block;
+	text-align: left;
+	right: 80px;
+}
+.msgRight:before{content:'';position:absolute;left:100%;top:-4px;width:15px;height:9px;border-width:0;border-style:solid;border-color:transparent;margin-left:-2px;border-bottom-width:11px;border-bottom-color:currentColor;border-radius:0 0 18px 0;color:rgb(209,241,254);}
+.msgRight img{
+	max-width: 300px;
+	max-height: 300px;
+}
+
+#importTools{
+	height: 40px;
+	background-color: white;
+	position: absolute;
+	top:10px;
+	left: 20px;
+	right: 20px;
+}
+#importMsgDiv{
+	position: absolute;
+	top:60px;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	background-color: rgba(255,255,255,0.1);
+	overflow: hidden ;
+}
+#importMsg{
+	width:100%;
+	height:100%;
+	background-color:transparent;
+	overflow: auto;
+	padding:5px 10px;
+}
+#importMsg:hover{
+    outline: none;
+}
+
+#emojiButton{
+	background-image: url(../../img/emojiBack.png);
+	background-color: transparent ;
+    width: 30px;
+    height: 30px;
+    background-size: cover ;
+    position: relative ;
+    left: 10px;
+    top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+#emojiButton:active{
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.7);
+}
+
+.emoji_container{
+	z-index: 100;
+}
+
+#imageButton{
+	width: 30px;
+    height: 30px;
+    background-size: cover ;
+    position: relative ;
+    border: none;
+    border-radius: 5px;
+    top:5px;
+    left:20px;
+    background-image: url(../../img/imageBack.png);
+    background-color: transparent ;
+}
+
+#imageButton:active{
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.7);
+}
+
+#fileButton{
+	width: 30px;
+    height: 30px;
+    background-size: cover ;
+    position: relative ;
+    border: none;
+    border-radius: 5px;
+    top:5px;
+    left:30px;
+    background-image: url(../../img/fileBack.png);
+    background-color: transparent ;
+}
+
+#fileButton:active{
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.7);
+}

@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgb(32,35,38);
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	min-height: 500px;
+}
+/*规定头部总样式*/
+#head{
+	padding-top: 5px;
+	height: 55px;
+	width: 100%;
+	background-color: rgb(27,30,33);
+	border-bottom:solid white 1px;
+}
+
+.suit{
+	height: 50px;
+	width: auto;
+}
+a.a2{
+	color: white;
+	text-decoration: none;
+}
+a.a2:hover{
+	color: #87CEEB;
+}
+
+#logo{
+	float:left;
+	padding-left: 10px;
+}
+
+#backlink{
+	float: right;
+	padding-left:20px;
+	padding-right: 20px;
+	line-height: 50px;
+}
+#select1{
+	float: right;
+	height: 100%;
+	padding: 0 5px 0 15px;
+	width: 90px;
+}
+
+#select1 img{
+	height: 20px;
+	display: inline;
+	padding-right: 10px;
+	position: relative;
+	top:3px;
+}
+#select1 p{
+	display: inline;
+	line-height: 50px;
+	color: white;
+}
+#select1 ul{
+	position: relative;
+	bottom: 36px;
+	right: 15px;
+	list-style-type: none;
+	display: none;
+}
+#select1 li{
+	line-height: 40px;
+	background-color: rgb(40,43,47);
+	width: 110px;
+}
+#select1 li:nth-child(1){
+	visibility: hidden;
+}
+#select1 li div{
+	padding: 0 10px;
+}
+#select1 li div:hover{
+	padding: 0 10px;
+	background-color: rgb(33,37,41);
+}
+/*头部样式定义完成*/
+
+#mid{
+	width: 100%;
+	height: 90%;
+	background-image: url(../img/login_mid_2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#page{
+	width: 380px;
+	height: 400px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 1;
+	position: relative;
+	top: 100px;
+	margin: auto;
+	padding: 22px 22px;
+}
+#title{
+	font-size: 150%;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+
+
+
+/*共有样式*/
+form{
+	padding: 0 20px;
+}
+.input{
+	text-align: center;
+	position: relative;
+	padding: 0 0 20px 0;
+}
+.input input{
+	width: 300px;
+	height: 40px;
+	padding: 0 0 0 40px;
+	border-radius: 5px;
+}
+
+.icon{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+
+#verificationDiv{
+	height: 40px;
+	padding-bottom: 20px;
+}
+#verificationDiv p{
+	float: left;
+	line-height: 40px;
+	padding-right: 10px;
+}
+#verificationInput{
+	height: 35px;
+	float: left;
+	width: 80px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+#verification{
+	height: 40px;
+	width: 120px;
+	background-color: black;
+	float:right;
+}
+
+#buttonDiv{
+	margin-bottom: 10px;
+}
+#buttonSubmit{
+	width: 100%;
+	height: 40px;
+	background-color: #4CAF50;
+	border: none;
+    color: white;
+}
+#buttonSubmit:hover { 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#warnDiv{
+	position: absolute;
+	background-color: yellow;
+	padding:0 15px;
+	color: #fff;
+    text-shadow: 0 -1px 0px black;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    background-color:#383838;
+    border-bottom-color:#383838;
+    border-radius: 5px;
+    visibility: hidden;
+}
+#warnDiv::before {
+  content: '';
+  width: 10px; 
+  height: 10px;
+  background-color: inherit;
+  left: -5px; /*向左侧外部延伸箭头box的一半宽度*/
+  position: absolute;
+  transform: rotate(45deg); /*旋转45度*/
+  top:50%; /*箭头在数值方向上居中*/
+  margin-top: -5px;
+}
+#warnDiv p{
+	margin: 5px;
+	white-space: nowrap;
+}
